@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+.{
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20px;
+	margin: 0px;
+    font-family: "Alegreya Sans", sans-serif;
+/*    background: linear-gradient(-45deg, #1c3454, #3E484C, #4C5C58);
+    background-size: 200% 200%;
+    animation: gradient 6s ease infinite;*/
+    letter-spacing: 0.05em;
+    animation: colorTransition 5s infinite;
+}
+
+@keyframes colorTransition {
+  0% { background-color: #20374f; }
+  50% { background-color: #37444a; }
+  100% { background-color: #20374f; }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.5em;
+  color: #AEE4ED;
+  font-family: "Audiowide", sans-serif;
+}
+
+.navigation{
+    padding-top: 0.5em;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    animation: colorTransition 5s infinite;
+}
+
+.navLinks{
+    display: flex;
+    padding: 0.36em;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navlink{
+    font-size: 1.1em;
+    border: 1px solid #66b9a9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(102, 185, 169, 0.5);
+}
+
+.navlink a{
+    color: #66b9a9;
+    text-decoration: none;
+}
+
+.mainContainer{
+    padding-top:5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topicContainer{
+    background-image: url('img/topicBg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.topic .text-wrapper {
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+}
+
+.topic{ 
+  top: 0; 
+  left: 0;
+  margin: 3em;
+}
+
+.topic .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#intro{
+    display: flex;
+    width: 70%;
+    color: #AEE4ED;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.highlight{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #633A34;
+    font-style: italic;
+}
+
+.useCaseContainer{
+    width: 90%;
+    border: 2px dashed #AEE4ED;
+    margin: 0.5em;
+  }
