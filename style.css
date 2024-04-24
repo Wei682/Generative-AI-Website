@@ -128,17 +128,17 @@ h2{
     font-weight: bold;
 }
 
-.chatBotImgContainer, .imgGenerationImgContainer{
+.chatBotImgContainer, .imgGenerationImgContainer, .videoGenerationVideoContainer{
     display: flex;
     width: 100%;
 }
 
 
-#chatBotImg, #imgGenerationImge{
+#chatBotImg, #imgGenerationImage, #videoGenerationVideo{
     width: 50%;
 }
 
-.useCase1{
+.useCase1, .useCase4{
     border: 2px dashed #AEE4ED;
 }
 
@@ -160,4 +160,8 @@ h2{
 
 .useCase3 p, .useCase3 ul, .useCase3 h3, .useCase3 a, .useCase3 h2{
     color: #e1d0ad;
+}
+
+.useCase4 p, .useCase4 ul, .useCase4 h3, .useCase4 a, .useCase4 h2{
+    color: #ddddca;
 }
