@@ -28,7 +28,6 @@ h1 {
 
 h2{
     font-family: "Audiowide", sans-serif;
-    color: #ddddca
 }
 
 
@@ -111,26 +110,54 @@ h2{
 
 .useCaseContainer{
     width: 90%;
-    border: 2px dashed #AEE4ED;
     margin: 0.5em;
     padding: 1em;
 }
 
 .useCaseContainer p, .useCaseContainer ul{
-    color: #ddddca;
     font-size: 1.1em;
 }
 
 .useCaseContainer h3{
-    color: #ddddca;
     font-size: 1.2em;
-}
-
-.useCaseContainer a{
-    color: #ddddca;
+    font-style: italic;
 }
 
 .useCaseContainer a:active{
     color: white;
     font-weight: bold;
+}
+
+.chatBotImgContainer, .imgGenerationImgContainer{
+    display: flex;
+    width: 100%;
+}
+
+
+#chatBotImg, #imgGenerationImge{
+    width: 50%;
+}
+
+.useCase1{
+    border: 2px dashed #AEE4ED;
+}
+
+.useCase1 p, .useCase1 ul, .useCase1 h3, .useCase1 a, .useCase1 h2{
+    color: #ddddca;
+}
+
+.useCase2{
+    border: 2px dashed #5A79C8;
+}
+
+.useCase2 p, .useCase2 ul, .useCase2 h3, .useCase2 a, .useCase2 h2{
+    color: #e5ceca;
+}
+
+.useCase3{
+    border: 2px dashed #44BBA4;
+}
+
+.useCase3 p, .useCase3 ul, .useCase3 h3, .useCase3 a, .useCase3 h2{
+    color: #e1d0ad;
 }
