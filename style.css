@@ -10,7 +10,7 @@ body{
 	margin: 0px;
     font-family: "Alegreya Sans", sans-serif;
     letter-spacing: 0.05em;
-    animation: colorTransition 5s infinite;
+    animation: colorTransition 7s infinite;
 }
 
 @keyframes colorTransition {
@@ -37,7 +37,7 @@ h2{
     position: fixed;
     display: flex;
     z-index: 1;
-    animation: colorTransition 5s infinite;
+    animation: colorTransition 7s infinite;
 }
 
 .navLinks{
@@ -258,4 +258,18 @@ h2{
     font-weight: bold;
 }
 
+.impactContainer{
+    color: #ddddca;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+    height: 70VH;
+    font-style: italic;
+}
 
+.impactContainer h2{
+    font-family: "Alegreya Sans", sans-serif;
+}
