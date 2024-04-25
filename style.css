@@ -21,7 +21,7 @@ body{
 
 h1 {
   font-weight: 700;
-  font-size: 3.5em;
+  font-size: 3.3em;
   color: #AEE4ED;
   font-family: "Audiowide", sans-serif;
 }
@@ -218,7 +218,6 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1em;
-    grid-row-gap: 3em;
     font-size: 1.2em;
 }
 
@@ -272,4 +271,40 @@ h2{
 
 .impactContainer h2{
     font-family: "Alegreya Sans", sans-serif;
+}
+
+
+@media only screen and (max-width: 640px) {
+    body{
+        font-size: 12px;
+    }
+
+    .socialTop{
+        display: flex;
+        align-items: center;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .newsImageContainer{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsImageContainer img{
+        width: 100%;
+    }
+
+    #insAccGrid {
+        margin-top: 2em;
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+
+    .profileImageContainer{
+        width: 80%;
+    }
 }
