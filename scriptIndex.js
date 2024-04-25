@@ -1,5 +1,3 @@
-AOS.init();
-
 // This animation is referenced from https://tobiasahlin.com/moving-letters/
 var textWrapper = document.querySelector('.topic .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
@@ -27,4 +25,3 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1500
   });
-
