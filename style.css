@@ -69,7 +69,7 @@ h2{
 }
 
 .topicContainer{
-    background-image: url('img/topicBg.png');
+    background-image: url('Img/topicBg.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +85,8 @@ h2{
 .topic{ 
   top: 0; 
   left: 0;
-  margin: 3em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .topic .letter {
@@ -277,6 +278,11 @@ h2{
 @media only screen and (max-width: 640px) {
     body{
         font-size: 12px;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 3em;
     }
 
     .socialTop{
