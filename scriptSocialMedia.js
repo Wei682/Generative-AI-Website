@@ -13,10 +13,21 @@ let insAccGridElement = document.getElementById('insAccGrid');
 
 let insAccDatabase = [
   {
-    "Handle" : "XXX",
-    "Profile Screenshot" : "",
-    "Link" : "https://daigobrooklyn.com/"
-  }]
+    "Handle" : "lilmiquela",
+    "Profile Screenshot" : "Img/lilmiquela.jpg",
+    "Link" : "https://www.instagram.com/lilmiquela/?hl=en"
+  },
+  {
+    "Handle" : "imma.gram",
+    "Profile Screenshot" : "Img/imma.gram.jpg",
+    "Link" : "https://www.instagram.com/imma.gram/"
+  },
+  {
+    "Handle" : "kyraonig",
+    "Profile Screenshot" : "Img/kyraonig.jpeg",
+    "Link" : "https://www.instagram.com/kyraonig/"
+  }
+]
 
 for (var i = 0; i < insAccDatabase.length; i++) {
   createAcctGrid(insAccDatabase[i]);
@@ -26,10 +37,19 @@ function createAcctGrid(incJSON) {
   let newContentElement = document.createElement("DIV");
   newContentElement.classList.add('contentItem');
 
-  let newContentHeading = document.createElement("H3");
-  newContentHeading.classList.add('handle');
-  newContentHeading.innerText = incJSON['Handle'];
-  newContentElement.appendChild(newContentHeading);
+  let newImageContainer = document.createElement("DIV");
+  newImageContainer.classList.add("profileImageContainer");
+  let newImage = document.createElement("IMG");
+  newImage.classList.add("profileImage");
+  newImage.src = incJSON['Profile Screenshot'];
+  newImageContainer.appendChild(newImage);
+  newContentElement.appendChild(newImageContainer);
+
+  let newContentLink = document.createElement("a");
+  newContentLink.href = incJSON['Link'];
+  newContentLink.textContent = incJSON['Handle'];
+  newContentLink.classList.add('handle');
+  newContentElement.appendChild(newContentLink);
 
   /// Add the item to the page
   insAccGridElement.appendChild(newContentElement);

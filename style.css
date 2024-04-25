@@ -212,6 +212,7 @@ h2{
 }
 
 #insAccGrid {
+    margin-top: 3em;
     width: 90%;
     align-items: center;
     display: grid;
@@ -222,12 +223,39 @@ h2{
 }
 
 .contentItem {
-  display: flex;
-  flex-direction: column;
-  padding: 0.8em;
-  background-color: #eed0b8;
-    box-shadow: 0 4px 8px #0000001A;
-  color: #4d0505;
-  border: 2px solid #dccdc2;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em;
+    color: #4d0505;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
+
+.profileImageContainer{
+    margin-top: 0.8em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profileImage{
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.contentItem a{
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #CBD0CC;
+    text-decoration: underline;
+}
+
+.contentItem a:active{
+    color: white;
+    font-weight: bold;
+}
+
+
